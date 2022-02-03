@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: helvetica;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#body {
+  background-image: url(../public/bg.png);
+  padding: 5vmin;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 5vmin;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container h1 {
+  font-size: 4vmin;
+}
+.container h2 {
+  font-size: 3vmin;
+}
+
+.input {
+  text-align: center;
+  background: none;
+  border-radius: 50px 0px 0px 50px;
+  border-color: #000000;
+  color: #000000;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.356);
+  width: 50vmin;
+  height: 35px;
+  font-size: 3vmin;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.button {
+  height: 41px;
+  background-color: rgba(250, 250, 250, 0.904);
+  border-color: #000000;
+  color: #000000;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.356);
+  border-radius: 0px 50px 50px 0px;
+}
+.button img {
+  height: 3.5vmin;
+  width: 3.5vmin;
+}
+
+.grid-inpubutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vmin 0vmin 6vmin 2vmin;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  margin: 5vmin;
+  border: 1px solid rgba(255, 255, 255, 0.835);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.356);
+  overflow: hidden;
+  width: 35vmin;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(243, 243, 243, 0.918);
+  border-radius: 40px;
+  height: 30vmin;
+}
+
+.card p {
+  font-size: 1.8vmin;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
