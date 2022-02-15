@@ -34,7 +34,7 @@ export default function GiftExpertApp() {
         </form>
 
         <button onClick={handleSetString} className="button">
-          <img src="/search-outline.svg" />
+          <img src="./search-outline.svg" />
         </button>
       </div>
       <QueryGifts category={string} />
